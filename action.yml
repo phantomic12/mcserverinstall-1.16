@@ -1,0 +1,12 @@
+name: mkarchiso-action
+description: Build a custom arch iso with github actions
+branding:
+  icon: package
+  color: cyan
+inputs:
+  command:
+    description: Command to run
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
