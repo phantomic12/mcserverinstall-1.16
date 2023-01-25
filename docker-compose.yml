@@ -9,7 +9,7 @@ services:
       EULA: "TRUE"
       TYPE: "FORGE"
       VERSION: "1.16.5"
-      MODPACK: "INSERT DL URL HERE"
+      MODPACK: "https://github.com/phantomic12/temp1/releases/download/dfvx/server.zip"
     tty: true
     stdin_open: true
     restart: unless-stopped
