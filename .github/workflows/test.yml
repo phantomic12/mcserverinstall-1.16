@@ -14,6 +14,8 @@ jobs:
     - name: docker up
       run: docker-compose up -d
 
-    - name: Run Server
-      timeout-minutes: 75
-      run: sudo sh start.sh
+    - uses: apogiatzis/ngrok-tunneling-action@master
+      with:
+        timeout: 1h
+        port: 25565
+        ngrok_authtoken: ${{ secrets.NGROK_AUTHTOKEN }}
