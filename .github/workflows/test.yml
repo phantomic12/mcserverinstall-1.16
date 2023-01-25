@@ -11,11 +11,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install Prerequisites
-      run: sudo sh prq.sh
-
-    - name: Prepare Server
-      run: sudo sh srv.sh
+    - name: docker up
+      run: docker-compose up -d
 
     - name: Run Server
       timeout-minutes: 75
