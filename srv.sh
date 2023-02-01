@@ -1,5 +1,5 @@
 FORGE_VERSION=36.2.34
-MOD_LINK=https://cdn.discordapp.com/attachments/1068270718309109770/1070136732424601750/mods.zip
+MOD_LINK=https://cdn.discordapp.com/attachments/518525254495240192/1070161242590806137/mods.zip
 SRV_IP=$(curl ifconfig.me)
 
 wget https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.5-$FORGE_VERSION/forge-1.16.5-$FORGE_VERSION-installer.jar
