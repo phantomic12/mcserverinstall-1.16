@@ -2,10 +2,10 @@ FORGE_VERSION=
 MOD_LINK=
 SRV_IP=$(curl ifconfig.me)
 
-wget https://maven.minecraftforge.net/net/minecraftforge/forge/$FORGE_VERSION/forge-$FORGE_VERSION-installer.jar
+wget https://maven.minecraftforge.net/net/minecraftforge/forge/$FORGE_VERSION/forge-1.16.5-$FORGE_VERSION-installer.jar
 sudo apt-get -y install openjdk-11-jre-headless
-java -jar forge-$FORGE_VERSION-installer.jar --installServer
-rm forge-$FORGE_VERSION-installer.jar
+java -jar forge*-installer.jar --installServer
+rm forge*-installer.jar
 sh start.sh
 echo "eula=true" > eula.txt
 mkdir mods && cd mods
