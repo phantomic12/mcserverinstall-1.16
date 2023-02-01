@@ -8,7 +8,8 @@ java -jar forge*-installer.jar --installServer
 rm forge*-installer.jar
 sh start.sh
 echo "eula=true" > eula.txt
-mkdir mods && cd mods
+mkdir mods 
+cd mods
 wget $MOD_LINK
 sudo apt-get -y install unzip
 unzip *.zip
