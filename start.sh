@@ -1,1 +1,1 @@
-java -Xmx8G -Xms8G -jar forge-*.jar nogui
+java -Xmx12G -Xms12G -jar forge-*.jar nogui
